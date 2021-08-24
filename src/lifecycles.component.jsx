@@ -23,6 +23,10 @@ class Lifecycles extends React.Component {
     return nextProps.text !== this.props.text;
   }
 
+  // rendering the code and componentDidUpdate depend on shouldComponentUpdate.
+  //if it returns true, then only it re-renders the code below and executes componentDidUpdate
+  //if false then will stop execution there itself
+
   render() {
     console.log('render!');
     return (
